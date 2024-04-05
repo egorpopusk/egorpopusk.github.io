@@ -3,12 +3,12 @@ async def start(message: types.Message):
                            reply_markup=keyboard)
 
 PRICE = {
-    '1': [types. LabeledPrice(label='Item1', amout=100000)],
-    '2': [types. LabeledPrice(label='Item2', amout=200000)],
-    '3': [types. LabeledPrice(label='Item3', amout=300000)],
-    '4': [types. LabeledPrice(label='Item4', amout=400000)],
-    '5': [types. LabeledPrice(label='Item5', amout=500000)],
-    '6': [types. LabeledPrice(label='Item6', amout=600000)]
+    '1': [types. LabeledPrice(label='Item1', amount=100000)],
+    '2': [types. LabeledPrice(label='Item2', amount=200000)],
+    '3': [types. LabeledPrice(label='Item3', amount=300000)],
+    '4': [types. LabeledPrice(label='Item4', amount=400000)],
+    '5': [types. LabeledPrice(label='Item5', amount=500000)],
+    '6': [types. LabeledPrice(label='Item6', amount=600000)]
 }
 @dp.message_handler(content_types='web_app_data')
 async def buy_process(web_app_message):
